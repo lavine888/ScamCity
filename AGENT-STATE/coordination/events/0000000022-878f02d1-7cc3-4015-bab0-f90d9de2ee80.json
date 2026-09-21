@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "eventId": "878f02d1-7cc3-4015-bab0-f90d9de2ee80",
+  "operationId": "enqueue:stable-citizen-grid",
+  "revision": 22,
+  "at": "2026-09-19T09:02:40.430Z",
+  "type": "task.created",
+  "payloadHash": "0141b36d810e3ff93087a2c9f5022fb0c382652e992e02fe2facde9c3809edc8",
+  "taskId": "stable-citizen-grid",
+  "title": "市民按 citizen id 稳定投影（验收矩阵 A-13 主体）",
+  "priority": "P1",
+  "dependencies": [],
+  "createdBy": "root"
+}

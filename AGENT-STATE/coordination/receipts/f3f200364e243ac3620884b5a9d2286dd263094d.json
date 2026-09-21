@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "operationId": "smoke-op-smoke-75c4a974-9e5b-4550-8468-747975d6f617-complete",
+  "payloadHash": "a4b799405868bde280eccecc17afb72b6222a36457815b37c95d8805d747f9a3",
+  "committedAt": "2026-09-19T07:16:22.946Z",
+  "result": {
+    "status": "completed",
+    "taskId": "smoke-75c4a974-9e5b-4550-8468-747975d6f617",
+    "eventId": "2d0dc666-79da-4db5-89e3-34025cd14442",
+    "revision": 10
+  }
+}

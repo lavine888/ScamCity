@@ -1,0 +1,3 @@
+# Use this only for the citizen currently inspected by the audience.
+kill @e[type=minecraft:text_display,tag=scamcity.text.selected]
+summon minecraft:text_display <x> <y> <z> {Tags:["scamcity.text","scamcity.text.selected"],text:'{"text":"<name> · <state>"}',billboard:"center",background:1073741824}

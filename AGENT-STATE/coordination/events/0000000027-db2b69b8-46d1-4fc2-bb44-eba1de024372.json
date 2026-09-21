@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "eventId": "db2b69b8-46d1-4fc2-bb44-eba1de024372",
+  "operationId": "complete:bridge-http1-fix:b9dadd43-59c2-4e36-94e8-7b34d7b63e5f:1:1aac46b6-1a19-454b-804f-42afe0881fa7",
+  "revision": 27,
+  "at": "2026-09-19T09:52:07.927Z",
+  "type": "task.complete",
+  "payloadHash": "2f91a7fa101ee725f7ad93965b6ecf91ad0565e08e73dcc8dbc428265a17671c",
+  "taskId": "bridge-http1-fix",
+  "ownerId": "root",
+  "leaseId": "b9dadd43-59c2-4e36-94e8-7b34d7b63e5f",
+  "generation": 1,
+  "note": "根因 JDK 默认 HTTP/2 对明文 http 试 h2c 升级被 Next.js dev 断开；固定 HTTP_1_1；Java 探针 5 次零偏差；hash 16f0d4ad 可复现并已装三处；修复未经游戏内验证，命令权限仍需用户开 Allow Cheats"
+}

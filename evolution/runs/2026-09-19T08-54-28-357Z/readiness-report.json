@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-09-19T08:54:28.359Z",
+  "apiUrl": "http://localhost:3000/api/simulation",
+  "gameDir": "D:\\Minecraft",
+  "ok": true,
+  "checks": [
+    {
+      "name": "api",
+      "status": "pass",
+      "detail": "health and snapshot available"
+    },
+    {
+      "name": "schema",
+      "status": "pass",
+      "detail": "scamcity.simulation/v1"
+    },
+    {
+      "name": "population",
+      "status": "pass",
+      "detail": "citizens=100; scammers=5"
+    },
+    {
+      "name": "bridge-jar",
+      "status": "pass",
+      "detail": "D:\\Minecraft\\mods\\scamcity-bridge-0.1.0.jar; sha256=7ADFB50962F51F98ED44ECF5000084ECCE632712E32C1E15DF27EA50AEC13C41"
+    }
+  ]
+}

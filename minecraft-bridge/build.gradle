@@ -1,0 +1,77 @@
+plugins {
+    id "fabric-loom" version "1.16.2"
+    id "maven-publish"
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    maven { url = "https://maven.fabricmc.net/" }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+def targetJava = 21
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = targetJava
+    it.options.encoding = "UTF-8"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+    withSourcesJar()
+}
+
+tasks.register("compileBridgeVerification", JavaCompile) {
+    source fileTree("src/verification/java")
+    // Only Minecraft-free classes belong here: the verification set compiles
+    // with an empty classpath so the regressions can run without the game.
+    source files("src/main/java/com/baytech/scamcity/bridge/RequestEpoch.java",
+            "src/main/java/com/baytech/scamcity/bridge/SceneQueue.java",
+            "src/main/java/com/baytech/scamcity/bridge/Scene.java",
+            "src/main/java/com/baytech/scamcity/bridge/CitizenGrid.java",
+            "src/main/java/com/baytech/scamcity/bridge/ApiEndpoints.java",
+            "src/main/java/com/baytech/scamcity/bridge/HudState.java")
+    classpath = files()
+    destinationDirectory = layout.buildDirectory.dir("verification-classes")
+}
+tasks.register("verifyBridgeLifecycle", JavaExec) {
+    dependsOn "compileBridgeVerification"
+    classpath = files(layout.buildDirectory.dir("verification-classes"))
+    mainClass = "com.baytech.scamcity.bridge.BridgeLifecycleTest"
+}
+tasks.named("check") { dependsOn "verifyBridgeLifecycle" }
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.archives_base_name}" }
+    }
+}
+
+publishing {
+    publications {
+        create("mavenJava", MavenPublication) {
+            from components.java
+        }
+    }
+}

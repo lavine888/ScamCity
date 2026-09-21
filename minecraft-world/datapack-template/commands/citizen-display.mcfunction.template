@@ -1,0 +1,4 @@
+# The bridge fills every <...> token before executing this command.
+# Keep the stable citizen id in both tags; it makes updates and reset safe.
+kill @e[type=minecraft:block_display,tag=scamcity.citizen.<citizen_id>]
+summon minecraft:block_display <x> <y> <z> {Tags:["scamcity.citizen","scamcity.citizen.<citizen_id>"],block_state:{Name:"<block_state>"}}

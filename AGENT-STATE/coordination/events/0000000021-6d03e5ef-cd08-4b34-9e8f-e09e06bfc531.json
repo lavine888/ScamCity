@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "eventId": "6d03e5ef-cd08-4b34-9e8f-e09e06bfc531",
+  "operationId": "complete:agent-sync-self-iteration:16eed372-bb2a-43e5-933c-4538e569cd2e:1:50d2defa-b96c-4cba-b6bb-ae1a217d8043",
+  "revision": 21,
+  "at": "2026-09-19T08:14:29.260Z",
+  "type": "task.complete",
+  "payloadHash": "035bbc4abbf02d9a2daa7f7b4d158ded2a441ba28b213fd8ce39e79532c22978",
+  "taskId": "agent-sync-self-iteration",
+  "ownerId": "root",
+  "leaseId": "16eed372-bb2a-43e5-933c-4538e569cd2e",
+  "generation": 1,
+  "note": "soak 50/50 通过；smoke 改为默认隔离根并验证共享 revision 不变；readiness gate 全通过。证据 docs/worklogs/2026-09-19-self-iteration.md"
+}

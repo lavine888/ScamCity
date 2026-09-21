@@ -1,0 +1,7 @@
+# Scoreboard values are whole numbers. The bridge rounds safetyIndex and loss.
+scoreboard players set #day scamcity_day <day>
+scoreboard players set #victims scamcity_victims <victims>
+scoreboard players set #loss scamcity_loss <loss>
+scoreboard players set #risk scamcity_risk <risk>
+scoreboard players set #events scamcity_events <event_sequence>
+title @a actionbar {"text":"SCAMCITY | Day <day> · <time> | Victims <victims> | Loss HK$<loss>","color":"aqua"}

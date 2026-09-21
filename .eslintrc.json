@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals"],
+  "ignorePatterns": [
+    ".next/",
+    "node_modules/",
+    "minecraft-bridge/build/",
+    "evolution/runs/",
+    "tmp-*/"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}

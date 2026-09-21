@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "eventId": "dbabeb09-491f-46ce-b75b-cc717e93f78a",
+  "operationId": "claim:stable-citizen-grid:root:0b8efe57-6e84-4658-861f-c4f0ae077f93",
+  "revision": 23,
+  "at": "2026-09-19T09:02:40.637Z",
+  "type": "task.claimed",
+  "payloadHash": "ba977329835e7806e3e99d2bc0a1afdeec10a9eb71e28dc0b5dc8aae073309bb",
+  "taskId": "stable-citizen-grid",
+  "ownerId": "root",
+  "leaseId": "f5a17553-18e5-4843-a5a5-2d680f962703",
+  "generation": 1,
+  "expiresAt": "2026-09-19T09:32:40.625Z"
+}

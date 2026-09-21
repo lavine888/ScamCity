@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# local secrets — never commit real keys
+.env
+.env.local
+.env*.local
+
+# logs / os
+*.log
+.DS_Store

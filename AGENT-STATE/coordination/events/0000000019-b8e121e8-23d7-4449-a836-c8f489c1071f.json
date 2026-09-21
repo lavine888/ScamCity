@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "eventId": "b8e121e8-23d7-4449-a836-c8f489c1071f",
+  "operationId": "enqueue:agent-sync-self-iteration",
+  "revision": 19,
+  "at": "2026-09-19T08:14:28.475Z",
+  "type": "task.created",
+  "payloadHash": "444096198d6339d99ac8348f4019558d388c88396fb61777091cb881f810cd62",
+  "taskId": "agent-sync-self-iteration",
+  "title": "协调层自我迭代：soak 验收 + smoke 隔离修复 + readiness gate",
+  "priority": "P1",
+  "dependencies": [],
+  "createdBy": "root"
+}

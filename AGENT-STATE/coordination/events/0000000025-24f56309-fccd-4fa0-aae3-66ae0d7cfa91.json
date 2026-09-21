@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "eventId": "24f56309-fccd-4fa0-aae3-66ae0d7cfa91",
+  "operationId": "enqueue:bridge-http1-fix",
+  "revision": 25,
+  "at": "2026-09-19T09:52:07.002Z",
+  "type": "task.created",
+  "payloadHash": "aa4fbd52c03a4d1f52216f643377af428bb7f143dd53824b1a542e0c3a39737b",
+  "taskId": "bridge-http1-fix",
+  "title": "HttpClient 固定 HTTP/1.1：修复真机取快照失败",
+  "priority": "P0",
+  "dependencies": [],
+  "createdBy": "root"
+}

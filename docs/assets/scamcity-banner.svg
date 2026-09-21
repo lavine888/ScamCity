@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">ScamCity — AI Society Simulation Lab</title>
+  <desc id="desc">A dark command-center banner showing a synthetic city network and fraud intervention signals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050c12"/>
+      <stop offset="0.55" stop-color="#081923"/>
+      <stop offset="1" stop-color="#0b1020"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#46d9e6" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#46d9e6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#79b2cb" stroke-opacity=".09"/>
+    </pattern>
+    <filter id="cyanGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="redGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="420" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="22" fill="url(#glow)"/>
+  <rect width="1200" height="420" rx="22" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="418" rx="21" fill="none" stroke="#79b2cb" stroke-opacity=".28"/>
+
+  <g transform="translate(70 70)">
+    <rect width="62" height="62" rx="8" fill="#07141d" stroke="#46d9e6" stroke-width="2"/>
+    <path d="M15 17h32v7H15zm0 11h21v7H15zm0 11h32v7H15z" fill="#46d9e6"/>
+    <path d="M40 28h7v7h-7z" fill="#fb3b50"/>
+    <circle cx="47" cy="12" r="4" fill="#40e0a0" filter="url(#cyanGlow)"/>
+  </g>
+  <text x="70" y="189" fill="#46d9e6" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="4">AI SOCIETY SIMULATION LAB</text>
+  <text x="66" y="265" fill="#e5f1f5" font-family="Segoe UI,Arial,sans-serif" font-size="72" font-weight="800" letter-spacing="-3">SCAM<tspan fill="#46d9e6">CITY</tspan></text>
+  <text x="70" y="307" fill="#9ab2bd" font-family="Segoe UI,Arial,sans-serif" font-size="20">Test fraud interventions on a synthetic society before the real world.</text>
+  <g transform="translate(70 344)" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">
+    <rect width="145" height="31" rx="15" fill="#40e0a0" fill-opacity=".09" stroke="#40e0a0" stroke-opacity=".55"/>
+    <circle cx="18" cy="15.5" r="4" fill="#40e0a0"/>
+    <text x="31" y="20" fill="#40e0a0">SEEDED &amp; REPLAYABLE</text>
+    <rect x="160" width="128" height="31" rx="15" fill="#9a7bff" fill-opacity=".09" stroke="#9a7bff" stroke-opacity=".55"/>
+    <text x="177" y="20" fill="#b9a8ff">WEB + MINECRAFT</text>
+  </g>
+
+  <g transform="translate(700 57)">
+    <rect width="430" height="306" rx="14" fill="#07131c" fill-opacity=".82" stroke="#79b2cb" stroke-opacity=".22"/>
+    <text x="24" y="34" fill="#74909e" font-family="monospace" font-size="11" letter-spacing="1.5">SYNTHETIC SOCIAL GRAPH / LIVE</text>
+    <g stroke="#4c91ff" stroke-opacity=".28" stroke-width="1.4">
+      <path d="M65 102L145 75 215 116 296 78 370 112M65 102l54 73 96-59 40 87 115-91M119 175l-31 76 116 16 51-64 92 55M204 267l-59-92m202 83l23-146M296 78l-41 125M145 75l0 100"/>
+    </g>
+    <g fill="#46d9e6" stroke="#07131c" stroke-width="4">
+      <circle cx="65" cy="102" r="8"/><circle cx="145" cy="75" r="10"/><circle cx="215" cy="116" r="7"/>
+      <circle cx="296" cy="78" r="9"/><circle cx="370" cy="112" r="7"/><circle cx="119" cy="175" r="8"/>
+      <circle cx="255" cy="203" r="11"/><circle cx="88" cy="251" r="7"/><circle cx="204" cy="267" r="9"/>
+      <circle cx="347" cy="258" r="8"/>
+    </g>
+    <circle cx="255" cy="203" r="18" fill="none" stroke="#40e0a0" stroke-opacity=".45" filter="url(#cyanGlow)"/>
+    <g fill="#fb3b50" stroke="#07131c" stroke-width="4" filter="url(#redGlow)">
+      <path d="M334 152l9 16-9 16-9-16z"/><path d="M166 214l8 14-8 14-8-14z"/>
+    </g>
+    <path d="M334 168Q302 183 265 199" fill="none" stroke="#fb3b50" stroke-width="2" stroke-dasharray="5 5"/>
+    <text x="24" y="292" fill="#40e0a0" font-family="monospace" font-size="11">100 CITIZENS</text>
+    <text x="143" y="292" fill="#fb3b50" font-family="monospace" font-size="11">5 SCAM AGENTS</text>
+    <text x="286" y="292" fill="#46d9e6" font-family="monospace" font-size="11">SEED 42</text>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "eventId": "48673485-50a3-48c8-ab50-2aaf201dd7fe",
+  "operationId": "complete:stable-citizen-grid:f5a17553-18e5-4843-a5a5-2d680f962703:1:8acd1249-1de4-4e2c-bd86-4a8babfb0d35",
+  "revision": 24,
+  "at": "2026-09-19T09:02:41.121Z",
+  "type": "task.complete",
+  "payloadHash": "42a9a45a77c1361f252570d3dac82e21bc949c850eef387df2d10a141176085b",
+  "taskId": "stable-citizen-grid",
+  "ownerId": "root",
+  "leaseId": "f5a17553-18e5-4843-a5a5-2d680f962703",
+  "generation": 1,
+  "note": "CitizenGrid 稳定投影；10 项回归 PASS；真实 API 100 id 映射 100 cell；hash 7adfb509 可复现并已安装；layout.json 未实现，现场不跳位待验收"
+}

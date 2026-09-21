@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "operationId": "claim:bridge-refresh-stability:root:6eae4d16-0693-4a96-be81-935397342f95",
+  "payloadHash": "fa1c07dcf5f0afd0fb349be33e951cde465dbbf3edcb3e2441627a70173eb5e0",
+  "committedAt": "2026-09-19T07:57:24.323Z",
+  "result": {
+    "status": "claimed",
+    "taskId": "bridge-refresh-stability",
+    "ownerId": "root",
+    "leaseId": "1bcc8ef6-ccbd-40dc-bc34-dfc02e1a66af",
+    "generation": 1,
+    "expiresAt": "2026-09-19T08:57:24.307Z",
+    "eventId": "851d35f3-e9fd-49e6-860c-390cb8770e75",
+    "revision": 12
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "scamcity_bridge",
+  "version": "${version}",
+  "name": "ScamCity Minecraft Bridge",
+  "description": "Turns ScamCity simulation snapshots into a visible Minecraft control room.",
+  "authors": ["Baytech Hackathon"],
+  "contact": {
+    "sources": "https://github.com/baytech"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.baytech.scamcity.bridge.ScamCityBridgeClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": ">=0.141.4"
+  }
+}

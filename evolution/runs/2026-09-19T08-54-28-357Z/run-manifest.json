@@ -1,0 +1,82 @@
+{
+  "manifestVersion": "scamcity.run/v1",
+  "runId": "scamcity-42-0-2-11",
+  "generatedAt": "2026-09-19T08:54:28.359Z",
+  "source": "live",
+  "apiUrl": "http://localhost:3000/api/simulation",
+  "schemaVersion": "scamcity.simulation/v1",
+  "snapshotId": "42-0-2-11",
+  "cursor": {
+    "revision": 11,
+    "tick": 0,
+    "eventSequence": 2,
+    "eventFeedStart": 1,
+    "eventFeedEnd": 2,
+    "eventFeedTruncated": false
+  },
+  "scenario": {
+    "seed": 42,
+    "tick": 0,
+    "day": 1,
+    "time": "Day 1 · 08:00",
+    "phase": "idle",
+    "eventSequence": 2,
+    "activeInterventions": [],
+    "activeAudienceEvents": []
+  },
+  "counts": {
+    "citizens": 100,
+    "scammers": 5,
+    "relationships": 327,
+    "eventsInWindow": 2
+  },
+  "metrics": {
+    "victims": 0,
+    "moneyLost": 0,
+    "fraudAttempts": 0,
+    "warningsSent": 0,
+    "falsePositives": 0,
+    "successfulInterventions": 0,
+    "interventionCost": 0,
+    "safetyIndex": 100,
+    "trustIndex": 72,
+    "funnel": {
+      "messagesSent": 0,
+      "engaged": 0,
+      "trusted": 0,
+      "clicked": 0,
+      "transferred": 0
+    },
+    "lossHistory": [
+      {
+        "tick": 0,
+        "day": 1,
+        "label": "Day 1 · 08:00",
+        "loss": 0,
+        "victims": 0
+      }
+    ]
+  },
+  "readiness": [
+    {
+      "name": "api",
+      "status": "pass",
+      "detail": "health and snapshot available"
+    },
+    {
+      "name": "schema",
+      "status": "pass",
+      "detail": "scamcity.simulation/v1"
+    },
+    {
+      "name": "population",
+      "status": "pass",
+      "detail": "citizens=100; scammers=5"
+    },
+    {
+      "name": "bridge-jar",
+      "status": "pass",
+      "detail": "D:\\Minecraft\\mods\\scamcity-bridge-0.1.0.jar; sha256=7ADFB50962F51F98ED44ECF5000084ECCE632712E32C1E15DF27EA50AEC13C41"
+    }
+  ]
+}

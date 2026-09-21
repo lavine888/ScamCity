@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "eventId": "c45265bb-2ea6-4eb3-b89d-9761175e98d6",
+  "operationId": "claim:bridge-http1-fix:root:c4ca7986-11e0-4d0d-9465-092d2d7f9a30",
+  "revision": 26,
+  "at": "2026-09-19T09:52:07.281Z",
+  "type": "task.claimed",
+  "payloadHash": "65026e4681ec3be5f4f29ffcef2c6bac17ae878f1cb005135a52b86bce1c19a2",
+  "taskId": "bridge-http1-fix",
+  "ownerId": "root",
+  "leaseId": "b9dadd43-59c2-4e36-94e8-7b34d7b63e5f",
+  "generation": 1,
+  "expiresAt": "2026-09-19T10:22:07.255Z"
+}

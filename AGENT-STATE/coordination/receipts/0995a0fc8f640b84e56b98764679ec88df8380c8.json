@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "operationId": "complete:bridge-http1-fix:b9dadd43-59c2-4e36-94e8-7b34d7b63e5f:1:1aac46b6-1a19-454b-804f-42afe0881fa7",
+  "payloadHash": "2f91a7fa101ee725f7ad93965b6ecf91ad0565e08e73dcc8dbc428265a17671c",
+  "committedAt": "2026-09-19T09:52:07.933Z",
+  "result": {
+    "status": "completed",
+    "taskId": "bridge-http1-fix",
+    "eventId": "db2b69b8-46d1-4fc2-bb44-eba1de024372",
+    "revision": 27
+  }
+}

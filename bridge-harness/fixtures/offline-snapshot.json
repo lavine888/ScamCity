@@ -1,0 +1,1923 @@
+{
+  "world": {
+    "version": 1,
+    "seed": 42,
+    "rngState": 123456789,
+    "tick": 5,
+    "day": 1,
+    "time": "Day 1 · 08:25",
+    "phase": "running",
+    "citizens": [
+      {
+        "id": "citizen-001",
+        "name": "Offline Citizen 001",
+        "age": 20,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 35,
+        "riskAwareness": 25,
+        "stress": 12,
+        "impulsiveness": 10,
+        "location": {
+          "x": 11,
+          "y": 7,
+          "zone": "residential"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-002",
+        "name": "Offline Citizen 002",
+        "age": 27,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 48,
+        "riskAwareness": 42,
+        "stress": 23,
+        "impulsiveness": 29,
+        "location": {
+          "x": 48,
+          "y": 68,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-003",
+        "name": "Offline Citizen 003",
+        "age": 34,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 61,
+        "riskAwareness": 59,
+        "stress": 34,
+        "impulsiveness": 48,
+        "location": {
+          "x": 85,
+          "y": 28,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-004",
+        "name": "Offline Citizen 004",
+        "age": 41,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 74,
+        "riskAwareness": 76,
+        "stress": 45,
+        "impulsiveness": 67,
+        "location": {
+          "x": 21,
+          "y": 89,
+          "zone": "waterfront"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-005",
+        "name": "Offline Citizen 005",
+        "age": 48,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 87,
+        "riskAwareness": 93,
+        "stress": 56,
+        "impulsiveness": 86,
+        "location": {
+          "x": 58,
+          "y": 49,
+          "zone": "transit"
+        },
+        "state": "engaged",
+        "isHub": true
+      },
+      {
+        "id": "citizen-006",
+        "name": "Offline Citizen 006",
+        "age": 55,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 40,
+        "riskAwareness": 40,
+        "stress": 67,
+        "impulsiveness": 20,
+        "location": {
+          "x": 95,
+          "y": 9,
+          "zone": "residential"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-007",
+        "name": "Offline Citizen 007",
+        "age": 62,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 53,
+        "riskAwareness": 57,
+        "stress": 78,
+        "impulsiveness": 39,
+        "location": {
+          "x": 31,
+          "y": 70,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-008",
+        "name": "Offline Citizen 008",
+        "age": 69,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 66,
+        "riskAwareness": 74,
+        "stress": 89,
+        "impulsiveness": 58,
+        "location": {
+          "x": 68,
+          "y": 30,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-009",
+        "name": "Offline Citizen 009",
+        "age": 21,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 79,
+        "riskAwareness": 91,
+        "stress": 22,
+        "impulsiveness": 77,
+        "location": {
+          "x": 4,
+          "y": 91,
+          "zone": "waterfront"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-010",
+        "name": "Offline Citizen 010",
+        "age": 28,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 92,
+        "riskAwareness": 38,
+        "stress": 33,
+        "impulsiveness": 11,
+        "location": {
+          "x": 41,
+          "y": 51,
+          "zone": "transit"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-011",
+        "name": "Offline Citizen 011",
+        "age": 35,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 45,
+        "riskAwareness": 55,
+        "stress": 44,
+        "impulsiveness": 30,
+        "location": {
+          "x": 78,
+          "y": 11,
+          "zone": "residential"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-012",
+        "name": "Offline Citizen 012",
+        "age": 42,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 58,
+        "riskAwareness": 72,
+        "stress": 55,
+        "impulsiveness": 49,
+        "location": {
+          "x": 14,
+          "y": 72,
+          "zone": "commercial"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-013",
+        "name": "Offline Citizen 013",
+        "age": 49,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 71,
+        "riskAwareness": 89,
+        "stress": 66,
+        "impulsiveness": 68,
+        "location": {
+          "x": 51,
+          "y": 32,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-014",
+        "name": "Offline Citizen 014",
+        "age": 56,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 84,
+        "riskAwareness": 36,
+        "stress": 77,
+        "impulsiveness": 87,
+        "location": {
+          "x": 88,
+          "y": 93,
+          "zone": "waterfront"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-015",
+        "name": "Offline Citizen 015",
+        "age": 63,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 37,
+        "riskAwareness": 53,
+        "stress": 88,
+        "impulsiveness": 21,
+        "location": {
+          "x": 24,
+          "y": 53,
+          "zone": "transit"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-016",
+        "name": "Offline Citizen 016",
+        "age": 70,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 50,
+        "riskAwareness": 70,
+        "stress": 21,
+        "impulsiveness": 40,
+        "location": {
+          "x": 61,
+          "y": 13,
+          "zone": "residential"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-017",
+        "name": "Offline Citizen 017",
+        "age": 22,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 63,
+        "riskAwareness": 87,
+        "stress": 32,
+        "impulsiveness": 59,
+        "location": {
+          "x": 98,
+          "y": 74,
+          "zone": "commercial"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-018",
+        "name": "Offline Citizen 018",
+        "age": 29,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 76,
+        "riskAwareness": 34,
+        "stress": 43,
+        "impulsiveness": 78,
+        "location": {
+          "x": 34,
+          "y": 34,
+          "zone": "campus"
+        },
+        "state": "protected",
+        "isHub": true
+      },
+      {
+        "id": "citizen-019",
+        "name": "Offline Citizen 019",
+        "age": 36,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 89,
+        "riskAwareness": 51,
+        "stress": 54,
+        "impulsiveness": 12,
+        "location": {
+          "x": 71,
+          "y": 95,
+          "zone": "waterfront"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-020",
+        "name": "Offline Citizen 020",
+        "age": 43,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 42,
+        "riskAwareness": 68,
+        "stress": 65,
+        "impulsiveness": 31,
+        "location": {
+          "x": 7,
+          "y": 55,
+          "zone": "transit"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-021",
+        "name": "Offline Citizen 021",
+        "age": 50,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 55,
+        "riskAwareness": 85,
+        "stress": 76,
+        "impulsiveness": 50,
+        "location": {
+          "x": 44,
+          "y": 15,
+          "zone": "residential"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-022",
+        "name": "Offline Citizen 022",
+        "age": 57,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 68,
+        "riskAwareness": 32,
+        "stress": 87,
+        "impulsiveness": 69,
+        "location": {
+          "x": 81,
+          "y": 76,
+          "zone": "commercial"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-023",
+        "name": "Offline Citizen 023",
+        "age": 64,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 81,
+        "riskAwareness": 49,
+        "stress": 20,
+        "impulsiveness": 88,
+        "location": {
+          "x": 17,
+          "y": 36,
+          "zone": "campus"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-024",
+        "name": "Offline Citizen 024",
+        "age": 71,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 94,
+        "riskAwareness": 66,
+        "stress": 31,
+        "impulsiveness": 22,
+        "location": {
+          "x": 54,
+          "y": 97,
+          "zone": "waterfront"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-025",
+        "name": "Offline Citizen 025",
+        "age": 23,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 47,
+        "riskAwareness": 83,
+        "stress": 42,
+        "impulsiveness": 41,
+        "location": {
+          "x": 91,
+          "y": 57,
+          "zone": "transit"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-026",
+        "name": "Offline Citizen 026",
+        "age": 30,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 60,
+        "riskAwareness": 30,
+        "stress": 53,
+        "impulsiveness": 60,
+        "location": {
+          "x": 27,
+          "y": 17,
+          "zone": "residential"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-027",
+        "name": "Offline Citizen 027",
+        "age": 37,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 73,
+        "riskAwareness": 47,
+        "stress": 64,
+        "impulsiveness": 79,
+        "location": {
+          "x": 64,
+          "y": 78,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-028",
+        "name": "Offline Citizen 028",
+        "age": 44,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 86,
+        "riskAwareness": 64,
+        "stress": 75,
+        "impulsiveness": 13,
+        "location": {
+          "x": 0,
+          "y": 38,
+          "zone": "campus"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-029",
+        "name": "Offline Citizen 029",
+        "age": 51,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 39,
+        "riskAwareness": 81,
+        "stress": 86,
+        "impulsiveness": 32,
+        "location": {
+          "x": 37,
+          "y": 99,
+          "zone": "waterfront"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-030",
+        "name": "Offline Citizen 030",
+        "age": 58,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 52,
+        "riskAwareness": 28,
+        "stress": 19,
+        "impulsiveness": 51,
+        "location": {
+          "x": 74,
+          "y": 59,
+          "zone": "transit"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-031",
+        "name": "Offline Citizen 031",
+        "age": 65,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 65,
+        "riskAwareness": 45,
+        "stress": 30,
+        "impulsiveness": 70,
+        "location": {
+          "x": 10,
+          "y": 19,
+          "zone": "residential"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-032",
+        "name": "Offline Citizen 032",
+        "age": 72,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 78,
+        "riskAwareness": 62,
+        "stress": 41,
+        "impulsiveness": 89,
+        "location": {
+          "x": 47,
+          "y": 80,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-033",
+        "name": "Offline Citizen 033",
+        "age": 24,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 91,
+        "riskAwareness": 79,
+        "stress": 52,
+        "impulsiveness": 23,
+        "location": {
+          "x": 84,
+          "y": 40,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-034",
+        "name": "Offline Citizen 034",
+        "age": 31,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 44,
+        "riskAwareness": 26,
+        "stress": 63,
+        "impulsiveness": 42,
+        "location": {
+          "x": 20,
+          "y": 0,
+          "zone": "waterfront"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-035",
+        "name": "Offline Citizen 035",
+        "age": 38,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 57,
+        "riskAwareness": 43,
+        "stress": 74,
+        "impulsiveness": 61,
+        "location": {
+          "x": 57,
+          "y": 61,
+          "zone": "transit"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-036",
+        "name": "Offline Citizen 036",
+        "age": 45,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 70,
+        "riskAwareness": 60,
+        "stress": 85,
+        "impulsiveness": 80,
+        "location": {
+          "x": 94,
+          "y": 21,
+          "zone": "residential"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-037",
+        "name": "Offline Citizen 037",
+        "age": 52,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 83,
+        "riskAwareness": 77,
+        "stress": 18,
+        "impulsiveness": 14,
+        "location": {
+          "x": 30,
+          "y": 82,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-038",
+        "name": "Offline Citizen 038",
+        "age": 59,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 36,
+        "riskAwareness": 94,
+        "stress": 29,
+        "impulsiveness": 33,
+        "location": {
+          "x": 67,
+          "y": 42,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-039",
+        "name": "Offline Citizen 039",
+        "age": 66,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 49,
+        "riskAwareness": 41,
+        "stress": 40,
+        "impulsiveness": 52,
+        "location": {
+          "x": 3,
+          "y": 2,
+          "zone": "waterfront"
+        },
+        "state": "safe",
+        "isHub": true
+      },
+      {
+        "id": "citizen-040",
+        "name": "Offline Citizen 040",
+        "age": 73,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 62,
+        "riskAwareness": 58,
+        "stress": 51,
+        "impulsiveness": 71,
+        "location": {
+          "x": 40,
+          "y": 63,
+          "zone": "transit"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-041",
+        "name": "Offline Citizen 041",
+        "age": 25,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 75,
+        "riskAwareness": 75,
+        "stress": 62,
+        "impulsiveness": 90,
+        "location": {
+          "x": 77,
+          "y": 23,
+          "zone": "residential"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-042",
+        "name": "Offline Citizen 042",
+        "age": 32,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 88,
+        "riskAwareness": 92,
+        "stress": 73,
+        "impulsiveness": 24,
+        "location": {
+          "x": 13,
+          "y": 84,
+          "zone": "commercial"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-043",
+        "name": "Offline Citizen 043",
+        "age": 39,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 41,
+        "riskAwareness": 39,
+        "stress": 84,
+        "impulsiveness": 43,
+        "location": {
+          "x": 50,
+          "y": 44,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-044",
+        "name": "Offline Citizen 044",
+        "age": 46,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 54,
+        "riskAwareness": 56,
+        "stress": 17,
+        "impulsiveness": 62,
+        "location": {
+          "x": 87,
+          "y": 4,
+          "zone": "waterfront"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-045",
+        "name": "Offline Citizen 045",
+        "age": 53,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 67,
+        "riskAwareness": 73,
+        "stress": 28,
+        "impulsiveness": 81,
+        "location": {
+          "x": 23,
+          "y": 65,
+          "zone": "transit"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-046",
+        "name": "Offline Citizen 046",
+        "age": 60,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 80,
+        "riskAwareness": 90,
+        "stress": 39,
+        "impulsiveness": 15,
+        "location": {
+          "x": 60,
+          "y": 25,
+          "zone": "residential"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-047",
+        "name": "Offline Citizen 047",
+        "age": 67,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 93,
+        "riskAwareness": 37,
+        "stress": 50,
+        "impulsiveness": 34,
+        "location": {
+          "x": 97,
+          "y": 86,
+          "zone": "commercial"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-048",
+        "name": "Offline Citizen 048",
+        "age": 74,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 46,
+        "riskAwareness": 54,
+        "stress": 61,
+        "impulsiveness": 53,
+        "location": {
+          "x": 33,
+          "y": 46,
+          "zone": "campus"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-049",
+        "name": "Offline Citizen 049",
+        "age": 26,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 59,
+        "riskAwareness": 71,
+        "stress": 72,
+        "impulsiveness": 72,
+        "location": {
+          "x": 70,
+          "y": 6,
+          "zone": "waterfront"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-050",
+        "name": "Offline Citizen 050",
+        "age": 33,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 72,
+        "riskAwareness": 88,
+        "stress": 83,
+        "impulsiveness": 91,
+        "location": {
+          "x": 6,
+          "y": 67,
+          "zone": "transit"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-051",
+        "name": "Offline Citizen 051",
+        "age": 40,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 85,
+        "riskAwareness": 35,
+        "stress": 16,
+        "impulsiveness": 25,
+        "location": {
+          "x": 43,
+          "y": 27,
+          "zone": "residential"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-052",
+        "name": "Offline Citizen 052",
+        "age": 47,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 38,
+        "riskAwareness": 52,
+        "stress": 27,
+        "impulsiveness": 44,
+        "location": {
+          "x": 80,
+          "y": 88,
+          "zone": "commercial"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-053",
+        "name": "Offline Citizen 053",
+        "age": 54,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 51,
+        "riskAwareness": 69,
+        "stress": 38,
+        "impulsiveness": 63,
+        "location": {
+          "x": 16,
+          "y": 48,
+          "zone": "campus"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-054",
+        "name": "Offline Citizen 054",
+        "age": 61,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 64,
+        "riskAwareness": 86,
+        "stress": 49,
+        "impulsiveness": 82,
+        "location": {
+          "x": 53,
+          "y": 8,
+          "zone": "waterfront"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-055",
+        "name": "Offline Citizen 055",
+        "age": 68,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 77,
+        "riskAwareness": 33,
+        "stress": 60,
+        "impulsiveness": 16,
+        "location": {
+          "x": 90,
+          "y": 69,
+          "zone": "transit"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-056",
+        "name": "Offline Citizen 056",
+        "age": 20,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 90,
+        "riskAwareness": 50,
+        "stress": 71,
+        "impulsiveness": 35,
+        "location": {
+          "x": 26,
+          "y": 29,
+          "zone": "residential"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-057",
+        "name": "Offline Citizen 057",
+        "age": 27,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 43,
+        "riskAwareness": 67,
+        "stress": 82,
+        "impulsiveness": 54,
+        "location": {
+          "x": 63,
+          "y": 90,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-058",
+        "name": "Offline Citizen 058",
+        "age": 34,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 56,
+        "riskAwareness": 84,
+        "stress": 15,
+        "impulsiveness": 73,
+        "location": {
+          "x": 100,
+          "y": 50,
+          "zone": "campus"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-059",
+        "name": "Offline Citizen 059",
+        "age": 41,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 69,
+        "riskAwareness": 31,
+        "stress": 26,
+        "impulsiveness": 92,
+        "location": {
+          "x": 36,
+          "y": 10,
+          "zone": "waterfront"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-060",
+        "name": "Offline Citizen 060",
+        "age": 48,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 82,
+        "riskAwareness": 48,
+        "stress": 37,
+        "impulsiveness": 26,
+        "location": {
+          "x": 73,
+          "y": 71,
+          "zone": "transit"
+        },
+        "state": "protected",
+        "isHub": true
+      },
+      {
+        "id": "citizen-061",
+        "name": "Offline Citizen 061",
+        "age": 55,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 35,
+        "riskAwareness": 65,
+        "stress": 48,
+        "impulsiveness": 45,
+        "location": {
+          "x": 9,
+          "y": 31,
+          "zone": "residential"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-062",
+        "name": "Offline Citizen 062",
+        "age": 62,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 48,
+        "riskAwareness": 82,
+        "stress": 59,
+        "impulsiveness": 64,
+        "location": {
+          "x": 46,
+          "y": 92,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-063",
+        "name": "Offline Citizen 063",
+        "age": 69,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 61,
+        "riskAwareness": 29,
+        "stress": 70,
+        "impulsiveness": 83,
+        "location": {
+          "x": 83,
+          "y": 52,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-064",
+        "name": "Offline Citizen 064",
+        "age": 21,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 74,
+        "riskAwareness": 46,
+        "stress": 81,
+        "impulsiveness": 17,
+        "location": {
+          "x": 19,
+          "y": 12,
+          "zone": "waterfront"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-065",
+        "name": "Offline Citizen 065",
+        "age": 28,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 87,
+        "riskAwareness": 63,
+        "stress": 14,
+        "impulsiveness": 36,
+        "location": {
+          "x": 56,
+          "y": 73,
+          "zone": "transit"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-066",
+        "name": "Offline Citizen 066",
+        "age": 35,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 40,
+        "riskAwareness": 80,
+        "stress": 25,
+        "impulsiveness": 55,
+        "location": {
+          "x": 93,
+          "y": 33,
+          "zone": "residential"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-067",
+        "name": "Offline Citizen 067",
+        "age": 42,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 53,
+        "riskAwareness": 27,
+        "stress": 36,
+        "impulsiveness": 74,
+        "location": {
+          "x": 29,
+          "y": 94,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-068",
+        "name": "Offline Citizen 068",
+        "age": 49,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 66,
+        "riskAwareness": 44,
+        "stress": 47,
+        "impulsiveness": 93,
+        "location": {
+          "x": 66,
+          "y": 54,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-069",
+        "name": "Offline Citizen 069",
+        "age": 56,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 79,
+        "riskAwareness": 61,
+        "stress": 58,
+        "impulsiveness": 27,
+        "location": {
+          "x": 2,
+          "y": 14,
+          "zone": "waterfront"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-070",
+        "name": "Offline Citizen 070",
+        "age": 63,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 92,
+        "riskAwareness": 78,
+        "stress": 69,
+        "impulsiveness": 46,
+        "location": {
+          "x": 39,
+          "y": 75,
+          "zone": "transit"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-071",
+        "name": "Offline Citizen 071",
+        "age": 70,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 45,
+        "riskAwareness": 25,
+        "stress": 80,
+        "impulsiveness": 65,
+        "location": {
+          "x": 76,
+          "y": 35,
+          "zone": "residential"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-072",
+        "name": "Offline Citizen 072",
+        "age": 22,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 58,
+        "riskAwareness": 42,
+        "stress": 13,
+        "impulsiveness": 84,
+        "location": {
+          "x": 12,
+          "y": 96,
+          "zone": "commercial"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-073",
+        "name": "Offline Citizen 073",
+        "age": 29,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 71,
+        "riskAwareness": 59,
+        "stress": 24,
+        "impulsiveness": 18,
+        "location": {
+          "x": 49,
+          "y": 56,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-074",
+        "name": "Offline Citizen 074",
+        "age": 36,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 84,
+        "riskAwareness": 76,
+        "stress": 35,
+        "impulsiveness": 37,
+        "location": {
+          "x": 86,
+          "y": 16,
+          "zone": "waterfront"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-075",
+        "name": "Offline Citizen 075",
+        "age": 43,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 37,
+        "riskAwareness": 93,
+        "stress": 46,
+        "impulsiveness": 56,
+        "location": {
+          "x": 22,
+          "y": 77,
+          "zone": "transit"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-076",
+        "name": "Offline Citizen 076",
+        "age": 50,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 50,
+        "riskAwareness": 40,
+        "stress": 57,
+        "impulsiveness": 75,
+        "location": {
+          "x": 59,
+          "y": 37,
+          "zone": "residential"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-077",
+        "name": "Offline Citizen 077",
+        "age": 57,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 63,
+        "riskAwareness": 57,
+        "stress": 68,
+        "impulsiveness": 94,
+        "location": {
+          "x": 96,
+          "y": 98,
+          "zone": "commercial"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-078",
+        "name": "Offline Citizen 078",
+        "age": 64,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 76,
+        "riskAwareness": 74,
+        "stress": 79,
+        "impulsiveness": 28,
+        "location": {
+          "x": 32,
+          "y": 58,
+          "zone": "campus"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-079",
+        "name": "Offline Citizen 079",
+        "age": 71,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 89,
+        "riskAwareness": 91,
+        "stress": 12,
+        "impulsiveness": 47,
+        "location": {
+          "x": 69,
+          "y": 18,
+          "zone": "waterfront"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-080",
+        "name": "Offline Citizen 080",
+        "age": 23,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 42,
+        "riskAwareness": 38,
+        "stress": 23,
+        "impulsiveness": 66,
+        "location": {
+          "x": 5,
+          "y": 79,
+          "zone": "transit"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-081",
+        "name": "Offline Citizen 081",
+        "age": 30,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 55,
+        "riskAwareness": 55,
+        "stress": 34,
+        "impulsiveness": 85,
+        "location": {
+          "x": 42,
+          "y": 39,
+          "zone": "residential"
+        },
+        "state": "safe",
+        "isHub": true
+      },
+      {
+        "id": "citizen-082",
+        "name": "Offline Citizen 082",
+        "age": 37,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 68,
+        "riskAwareness": 72,
+        "stress": 45,
+        "impulsiveness": 19,
+        "location": {
+          "x": 79,
+          "y": 100,
+          "zone": "commercial"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-083",
+        "name": "Offline Citizen 083",
+        "age": 44,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 81,
+        "riskAwareness": 89,
+        "stress": 56,
+        "impulsiveness": 38,
+        "location": {
+          "x": 15,
+          "y": 60,
+          "zone": "campus"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-084",
+        "name": "Offline Citizen 084",
+        "age": 51,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 94,
+        "riskAwareness": 36,
+        "stress": 67,
+        "impulsiveness": 57,
+        "location": {
+          "x": 52,
+          "y": 20,
+          "zone": "waterfront"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-085",
+        "name": "Offline Citizen 085",
+        "age": 58,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 47,
+        "riskAwareness": 53,
+        "stress": 78,
+        "impulsiveness": 76,
+        "location": {
+          "x": 89,
+          "y": 81,
+          "zone": "transit"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-086",
+        "name": "Offline Citizen 086",
+        "age": 65,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 60,
+        "riskAwareness": 70,
+        "stress": 89,
+        "impulsiveness": 10,
+        "location": {
+          "x": 25,
+          "y": 41,
+          "zone": "residential"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-087",
+        "name": "Offline Citizen 087",
+        "age": 72,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 73,
+        "riskAwareness": 87,
+        "stress": 22,
+        "impulsiveness": 29,
+        "location": {
+          "x": 62,
+          "y": 1,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-088",
+        "name": "Offline Citizen 088",
+        "age": 24,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 86,
+        "riskAwareness": 34,
+        "stress": 33,
+        "impulsiveness": 48,
+        "location": {
+          "x": 99,
+          "y": 62,
+          "zone": "campus"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-089",
+        "name": "Offline Citizen 089",
+        "age": 31,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 39,
+        "riskAwareness": 51,
+        "stress": 44,
+        "impulsiveness": 67,
+        "location": {
+          "x": 35,
+          "y": 22,
+          "zone": "waterfront"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-090",
+        "name": "Offline Citizen 090",
+        "age": 38,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 52,
+        "riskAwareness": 68,
+        "stress": 55,
+        "impulsiveness": 86,
+        "location": {
+          "x": 72,
+          "y": 83,
+          "zone": "transit"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-091",
+        "name": "Offline Citizen 091",
+        "age": 45,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 65,
+        "riskAwareness": 85,
+        "stress": 66,
+        "impulsiveness": 20,
+        "location": {
+          "x": 8,
+          "y": 43,
+          "zone": "residential"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-092",
+        "name": "Offline Citizen 092",
+        "age": 52,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 78,
+        "riskAwareness": 32,
+        "stress": 77,
+        "impulsiveness": 39,
+        "location": {
+          "x": 45,
+          "y": 3,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-093",
+        "name": "Offline Citizen 093",
+        "age": 59,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 91,
+        "riskAwareness": 49,
+        "stress": 88,
+        "impulsiveness": 58,
+        "location": {
+          "x": 82,
+          "y": 64,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-094",
+        "name": "Offline Citizen 094",
+        "age": 66,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 44,
+        "riskAwareness": 66,
+        "stress": 21,
+        "impulsiveness": 77,
+        "location": {
+          "x": 18,
+          "y": 24,
+          "zone": "waterfront"
+        },
+        "state": "suspicious",
+        "isHub": false
+      },
+      {
+        "id": "citizen-095",
+        "name": "Offline Citizen 095",
+        "age": 73,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 57,
+        "riskAwareness": 83,
+        "stress": 32,
+        "impulsiveness": 11,
+        "location": {
+          "x": 55,
+          "y": 85,
+          "zone": "transit"
+        },
+        "state": "engaged",
+        "isHub": false
+      },
+      {
+        "id": "citizen-096",
+        "name": "Offline Citizen 096",
+        "age": 25,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 70,
+        "riskAwareness": 30,
+        "stress": 43,
+        "impulsiveness": 30,
+        "location": {
+          "x": 92,
+          "y": 45,
+          "zone": "residential"
+        },
+        "state": "protected",
+        "isHub": false
+      },
+      {
+        "id": "citizen-097",
+        "name": "Offline Citizen 097",
+        "age": 32,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 83,
+        "riskAwareness": 47,
+        "stress": 54,
+        "impulsiveness": 49,
+        "location": {
+          "x": 28,
+          "y": 5,
+          "zone": "commercial"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-098",
+        "name": "Offline Citizen 098",
+        "age": 39,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 36,
+        "riskAwareness": 64,
+        "stress": 65,
+        "impulsiveness": 68,
+        "location": {
+          "x": 65,
+          "y": 66,
+          "zone": "campus"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-099",
+        "name": "Offline Citizen 099",
+        "age": 46,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 49,
+        "riskAwareness": 81,
+        "stress": 76,
+        "impulsiveness": 87,
+        "location": {
+          "x": 1,
+          "y": 26,
+          "zone": "waterfront"
+        },
+        "state": "safe",
+        "isHub": false
+      },
+      {
+        "id": "citizen-100",
+        "name": "Offline Citizen 100",
+        "age": 53,
+        "occupation": "Software Engineer",
+        "digitalLiteracy": 62,
+        "riskAwareness": 28,
+        "stress": 87,
+        "impulsiveness": 21,
+        "location": {
+          "x": 38,
+          "y": 87,
+          "zone": "transit"
+        },
+        "state": "suspicious",
+        "isHub": false
+      }
+    ],
+    "socialGraph": {
+      "nodes": [
+        "citizen-001",
+        "citizen-002",
+        "citizen-003",
+        "citizen-004",
+        "citizen-005",
+        "citizen-006",
+        "citizen-007",
+        "citizen-008",
+        "citizen-009",
+        "citizen-010",
+        "citizen-011",
+        "citizen-012",
+        "citizen-013",
+        "citizen-014",
+        "citizen-015",
+        "citizen-016",
+        "citizen-017",
+        "citizen-018",
+        "citizen-019",
+        "citizen-020",
+        "citizen-021",
+        "citizen-022",
+        "citizen-023",
+        "citizen-024",
+        "citizen-025",
+        "citizen-026",
+        "citizen-027",
+        "citizen-028",
+        "citizen-029",
+        "citizen-030",
+        "citizen-031",
+        "citizen-032",
+        "citizen-033",
+        "citizen-034",
+        "citizen-035",
+        "citizen-036",
+        "citizen-037",
+        "citizen-038",
+        "citizen-039",
+        "citizen-040",
+        "citizen-041",
+        "citizen-042",
+        "citizen-043",
+        "citizen-044",
+        "citizen-045",
+        "citizen-046",
+        "citizen-047",
+        "citizen-048",
+        "citizen-049",
+        "citizen-050",
+        "citizen-051",
+        "citizen-052",
+        "citizen-053",
+        "citizen-054",
+        "citizen-055",
+        "citizen-056",
+        "citizen-057",
+        "citizen-058",
+        "citizen-059",
+        "citizen-060",
+        "citizen-061",
+        "citizen-062",
+        "citizen-063",
+        "citizen-064",
+        "citizen-065",
+        "citizen-066",
+        "citizen-067",
+        "citizen-068",
+        "citizen-069",
+        "citizen-070",
+        "citizen-071",
+        "citizen-072",
+        "citizen-073",
+        "citizen-074",
+        "citizen-075",
+        "citizen-076",
+        "citizen-077",
+        "citizen-078",
+        "citizen-079",
+        "citizen-080",
+        "citizen-081",
+        "citizen-082",
+        "citizen-083",
+        "citizen-084",
+        "citizen-085",
+        "citizen-086",
+        "citizen-087",
+        "citizen-088",
+        "citizen-089",
+        "citizen-090",
+        "citizen-091",
+        "citizen-092",
+        "citizen-093",
+        "citizen-094",
+        "citizen-095",
+        "citizen-096",
+        "citizen-097",
+        "citizen-098",
+        "citizen-099",
+        "citizen-100"
+      ],
+      "edges": [],
+      "hubs": [
+        "citizen-005",
+        "citizen-018",
+        "citizen-039",
+        "citizen-060",
+        "citizen-081"
+      ]
+    },
+    "scammers": [
+      {
+        "id": "scammer-01",
+        "name": "Service Desk Mirage",
+        "strategy": "fake-customer-service",
+        "active": true
+      },
+      {
+        "id": "scammer-02",
+        "name": "Yield Hunter",
+        "strategy": "fake-investment",
+        "active": true
+      },
+      {
+        "id": "scammer-03",
+        "name": "Familiar Voice",
+        "strategy": "impersonation",
+        "active": true
+      },
+      {
+        "id": "scammer-04",
+        "name": "Official Line",
+        "strategy": "authority-scam",
+        "active": true
+      },
+      {
+        "id": "scammer-05",
+        "name": "Clickbait Relay",
+        "strategy": "phishing-link",
+        "active": true
+      }
+    ],
+    "messages": [],
+    "interactions": [],
+    "eventFeed": [
+      {
+        "id": "event-42-1",
+        "tick": 0,
+        "time": "Day 1 · 08:00",
+        "kind": "system",
+        "message": "100 synthetic citizens are living their normal lives.",
+        "severity": "info"
+      },
+      {
+        "id": "event-42-2",
+        "tick": 0,
+        "time": "Day 1 · 08:00",
+        "kind": "system",
+        "message": "Five scam agents are waiting outside the city boundary.",
+        "severity": "warning"
+      },
+      {
+        "id": "event-42-3",
+        "tick": 4,
+        "time": "Day 1 · 08:20",
+        "kind": "scam",
+        "message": "Offline fixture: a suspicious message reached the city.",
+        "severity": "warning",
+        "citizenId": "citizen-004",
+        "scammerId": "scammer-01"
+      },
+      {
+        "id": "event-42-4",
+        "tick": 5,
+        "time": "Day 1 · 08:25",
+        "kind": "intervention",
+        "message": "Offline fixture: a guardian warning was delivered.",
+        "severity": "success",
+        "citizenId": "citizen-004"
+      }
+    ],
+    "eventSequence": 4,
+    "metrics": {
+      "victims": 0,
+      "moneyLost": 0,
+      "fraudAttempts": 1,
+      "warningsSent": 1,
+      "successfulInterventions": 1,
+      "safetyIndex": 98,
+      "trustIndex": 72
+    },
+    "activeInterventions": [
+      "social-guardian"
+    ],
+    "interventionHistory": [],
+    "networkInfluencerIds": [
+      "citizen-005",
+      "citizen-018",
+      "citizen-039",
+      "citizen-060",
+      "citizen-081"
+    ]
+  },
+  "overview": {
+    "citizens": 100,
+    "relationships": 0,
+    "activeScammers": 5
+  },
+  "findings": []
+}

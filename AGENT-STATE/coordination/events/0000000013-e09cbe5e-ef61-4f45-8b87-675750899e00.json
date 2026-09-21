@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "scamcity.agent-sync/v1",
+  "eventId": "e09cbe5e-ef61-4f45-8b87-675750899e00",
+  "operationId": "complete:bridge-refresh-stability:1bcc8ef6-ccbd-40dc-bc34-dfc02e1a66af:1:18f93b35-486d-4272-9206-c81a077ff978",
+  "revision": 13,
+  "at": "2026-09-19T07:59:38.638Z",
+  "type": "task.complete",
+  "payloadHash": "bc494737dec04d3d8fcdb072b776ea5cb5f194198e95c8765253ab8acaa50e88",
+  "taskId": "bridge-refresh-stability",
+  "ownerId": "root",
+  "leaseId": "1bcc8ef6-ccbd-40dc-bc34-dfc02e1a66af",
+  "generation": 1,
+  "note": "离线验收通过：verify-command-format、verifyBridgeLifecycle、clean build 可复现 hash a223c206；staging 与 D:/Minecraft/mods 已更新，旧 JAR 已备份。真实游戏内 E2E 待验收。证据 docs/worklogs/2026-09-19-bridge-refresh-verification.md"
+}

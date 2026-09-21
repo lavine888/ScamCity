@@ -1,0 +1,9 @@
+# Preview-only build commands. Review the coordinates and run in a copied world.
+# They use a small footprint and do not clear terrain.
+setblock 0 64 0 minecraft:cyan_concrete
+setblock 0 65 0 minecraft:beacon
+setblock 0 66 0 minecraft:light_blue_stained_glass
+setblock -1 64 0 minecraft:iron_block
+setblock 1 64 0 minecraft:iron_block
+setblock 0 64 -1 minecraft:iron_block
+setblock 0 64 1 minecraft:iron_block

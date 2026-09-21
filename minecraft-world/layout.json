@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schemaVersion": 1,
+  "name": "ScamCity Minecraft spatial contract",
+  "source": {
+    "snapshotEndpoint": "GET /api/simulation",
+    "commandEndpoint": "POST /api/simulation",
+    "identityKey": "citizen.id",
+    "eventHighWaterMark": "world.eventSequence",
+    "snapshotType": "SimulationSnapshot"
+  },
+  "coordinateSystem": {
+    "minecraft": {
+      "origin": { "x": 0, "y": 64, "z": 0 },
+      "groundY": 64,
+      "displayY": 65,
+      "cityBounds": { "minX": -55, "maxX": 55, "minZ": -45, "maxZ": 45 },
+      "northIsNegativeZ": true,
+      "eastIsPositiveX": true
+    },
+    "citizenProjection": {
+      "xFormula": "round((citizen.location.x - 50) * 1.10)",
+      "zFormula": "round((citizen.location.y - 50) * 0.90)",
+      "yFormula": "65",
+      "clamp": { "minX": -55, "maxX": 55, "minZ": -45, "maxZ": 45 },
+      "reservedFootprint": { "minX": -6, "maxX": 6, "minZ": -6, "maxZ": 6 },
+      "collisionPolicy": "stable-id-spiral-radius-4",
+      "collisionKey": "citizen.id"
+    }
+  },
+  "anchors": {
+    "controlTower": { "x": 0, "y": 64, "z": 0, "footprint": 6, "height": 14 },
+    "scammerGate": { "x": 0, "y": 64, "z": -53 },
+    "eventWall": { "x": 62, "y": 64, "z": 0, "facing": "west", "rows": 12 },
+    "interventionLab": { "x": -62, "y": 64, "z": 0, "facing": "east", "stations": 4 },
+    "safetyConsole": { "x": 45, "y": 64, "z": 53 },
+    "audienceSpawn": { "x": 0, "y": 66, "z": 68, "facing": "north" }
+  },
+  "displayZones": [
+    {
+      "id": "north-residential",
+      "semantic": "residential",
+      "label": "NORTH RESIDENTIAL",
+      "bounds": { "minX": -55, "maxX": -7, "minZ": -45, "maxZ": -7 },
+      "palette": "stone-lantern"
+    },
+    {
+      "id": "campus",
+      "semantic": "campus",
+      "label": "CAMPUS",
+      "bounds": { "minX": 7, "maxX": 55, "minZ": -45, "maxZ": -7 },
+      "palette": "quartz-cyan"
+    },
+    {
+      "id": "commercial",
+      "semantic": "commercial",
+      "label": "COMMERCIAL",
+      "bounds": { "minX": -55, "maxX": -7, "minZ": 7, "maxZ": 45 },
+      "palette": "copper-orange"
+    },
+    {
+      "id": "transit",
+      "semantic": "transit",
+      "label": "TRANSIT",
+      "bounds": { "minX": 7, "maxX": 55, "minZ": 7, "maxZ": 20 },
+      "palette": "deepslate-yellow"
+    },
+    {
+      "id": "waterfront",
+      "semantic": "waterfront",
+      "label": "WATERFRONT",
+      "bounds": { "minX": 7, "maxX": 55, "minZ": 21, "maxZ": 45 },
+      "palette": "prismarine-blue"
+    }
+  ],
+  "citizenDisplay": {
+    "preferredEntity": "minecraft:block_display",
+    "fallback": "minecraft:setblock",
+    "globalTag": "scamcity.citizen",
+    "idTagPrefix": "scamcity.citizen.",
+    "hubTag": "scamcity.hub",
+    "selectedEntity": "minecraft:text_display",
+    "states": {
+      "safe": { "block": "minecraft:blue_concrete", "hex": "#4c91ff", "riskBand": "low" },
+      "suspicious": { "block": "minecraft:yellow_concrete", "hex": "#facc15", "riskBand": "medium" },
+      "engaged": { "block": "minecraft:orange_concrete", "hex": "#f59e0b", "riskBand": "elevated" },
+      "trusted": { "block": "minecraft:red_concrete", "accent": "minecraft:orange_stained_glass", "hex": "#ff8c42", "riskBand": "high" },
+      "clicked": { "block": "minecraft:orange_concrete", "accent": "minecraft:glowstone", "hex": "#fb923c", "riskBand": "high" },
+      "victim": { "block": "minecraft:red_concrete", "accent": "minecraft:redstone_block", "hex": "#fb3b50", "riskBand": "critical" },
+      "protected": { "block": "minecraft:emerald_block", "accent": "minecraft:lime_stained_glass", "hex": "#40e0a0", "riskBand": "protected" }
+    },
+    "derivedRisk": {
+      "safe": 5,
+      "suspicious": 35,
+      "engaged": 45,
+      "trusted": 60,
+      "clicked": 75,
+      "victim": 90,
+      "protected": 15
+    }
+  },
+  "scammerDisplay": {
+    "globalTag": "scamcity.scammer",
+    "agentTagPrefix": "scamcity.scammer.",
+    "gatePositions": [
+      { "x": -16, "y": 65, "z": -53 },
+      { "x": -8, "y": 65, "z": -53 },
+      { "x": 0, "y": 65, "z": -53 },
+      { "x": 8, "y": 65, "z": -53 },
+      { "x": 16, "y": 65, "z": -53 }
+    ],
+    "strategyAccents": {
+      "fake-customer-service": "minecraft:iron_block",
+      "fake-investment": "minecraft:gold_block",
+      "impersonation": "minecraft:purple_concrete",
+      "authority-scam": "minecraft:netherite_block",
+      "phishing-link": "minecraft:magenta_concrete"
+    }
+  },
+  "riskHeat": {
+    "cellSize": 5,
+    "grid": { "columns": 22, "rows": 18 },
+    "source": "max-derivedRisk-of-citizens-in-cell",
+    "blocks": {
+      "low": "minecraft:blue_stained_glass",
+      "medium": "minecraft:yellow_stained_glass",
+      "elevated": "minecraft:orange_stained_glass",
+      "critical": "minecraft:red_stained_glass",
+      "protected": "minecraft:lime_stained_glass"
+    },
+    "updatePolicy": "only-change-dirty-cells"
+  },
+  "hud": {
+    "scoreboards": {
+      "tick": "scamcity_tick",
+      "day": "scamcity_day",
+      "victims": "scamcity_victims",
+      "loss": "scamcity_loss",
+      "risk": "scamcity_risk",
+      "events": "scamcity_events"
+    },
+    "towerLines": [
+      "SCAMCITY / AI SOCIETY",
+      "DAY <day> · <time>",
+      "CITIZENS 100 · AGENTS 5",
+      "VICTIMS <victims> · LOSS HK$<loss>",
+      "SAFETY INDEX <safetyIndex>"
+    ],
+    "eventWallRows": 12,
+    "eventHighWaterMark": "world.eventSequence"
+  },
+  "eventEffects": {
+    "kindParticle": {
+      "system": "minecraft:enchant",
+      "scam": "minecraft:crit",
+      "citizen": "minecraft:angry_villager",
+      "intervention": "minecraft:happy_villager",
+      "warning": "minecraft:note",
+      "outcome": "minecraft:flame"
+    },
+    "severityAccent": {
+      "info": "minecraft:light_blue_concrete",
+      "warning": "minecraft:yellow_concrete",
+      "danger": "minecraft:red_concrete",
+      "success": "minecraft:lime_concrete"
+    },
+    "lineDurationTicks": 40
+  },
+  "interventionStations": [
+    { "strategy": "mass-warning", "label": "MASS WARNING", "x": -62, "y": 65, "z": -12, "accent": "minecraft:yellow_concrete" },
+    { "strategy": "bank-risk-agent", "label": "BANK RISK AGENT", "x": -62, "y": 65, "z": -4, "accent": "minecraft:blue_concrete" },
+    { "strategy": "social-guardian", "label": "SOCIAL GUARDIAN", "x": -62, "y": 65, "z": 4, "accent": "minecraft:emerald_block" },
+    { "strategy": "network-intervention", "label": "NETWORK INTERVENTION", "x": -62, "y": 65, "z": 12, "accent": "minecraft:purple_concrete" }
+  ],
+  "safety": {
+    "demoWorldRule": "Use a copy of the target world before running any layout builder.",
+    "resetScope": "Only entities with scamcity.* tags and scamcity scoreboard fake players.",
+    "forbiddenAutomation": ["copy-or-edit .minecraft/saves", "read launcher accounts", "kill untagged entities", "fill user terrain without review"]
+  }
+}

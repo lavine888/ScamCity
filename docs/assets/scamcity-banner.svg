@@ -1,133 +1,181 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
-  <title id="title">ScamCity — AI Society Simulation Lab</title>
-  <desc id="desc">A cinematic command center showing a synthetic city, scam agents, live metrics and intervention controls.</desc>
+  <title id="title">ScamCity — test interventions before the real world</title>
+  <desc id="desc">Editorial hero artwork showing a glowing synthetic city under observation, with fraud signals and a protective intervention wave.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#03090e"/><stop offset=".52" stop-color="#071722"/><stop offset="1" stop-color="#090d1a"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#02070b"/>
+      <stop offset="0.48" stop-color="#06131b"/>
+      <stop offset="1" stop-color="#090b18"/>
     </linearGradient>
-    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#eafaff"/><stop offset=".68" stop-color="#c8f8fb"/><stop offset="1" stop-color="#46d9e6"/>
+    <linearGradient id="wordmark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f3fcff"/>
+      <stop offset="0.72" stop-color="#d9f9fb"/>
+      <stop offset="1" stop-color="#78edf3"/>
     </linearGradient>
-    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0b202c" stop-opacity=".94"/><stop offset="1" stop-color="#07131c" stop-opacity=".94"/>
+    <linearGradient id="cyanLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#46d9e6" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#46d9e6" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#46d9e6" stop-opacity="0"/>
     </linearGradient>
-    <radialGradient id="cyanAura" cx="78%" cy="38%" r="48%">
-      <stop offset="0" stop-color="#46d9e6" stop-opacity=".19"/><stop offset="1" stop-color="#46d9e6" stop-opacity="0"/>
+    <radialGradient id="cityAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#46d9e6" stop-opacity="0.18"/>
+      <stop offset="0.56" stop-color="#46d9e6" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#46d9e6" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="violetAura" cx="12%" cy="100%" r="55%">
-      <stop offset="0" stop-color="#9a7bff" stop-opacity=".15"/><stop offset="1" stop-color="#9a7bff" stop-opacity="0"/>
+    <radialGradient id="redAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fb3b50" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#fb3b50" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#79b2cb" stroke-opacity=".07"/>
+    <pattern id="microGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#9bc1d0" stroke-opacity="0.045" stroke-width="1"/>
     </pattern>
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
-    <clipPath id="round"><rect width="1280" height="560" rx="26"/></clipPath>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#8cc8d6" fill-opacity="0.12"/>
+    </pattern>
+    <filter id="cyanGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="redGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="wideBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <clipPath id="frame"><rect width="1280" height="560" rx="28"/></clipPath>
+    <clipPath id="cityClip"><circle cx="990" cy="280" r="230"/></clipPath>
   </defs>
 
-  <g clip-path="url(#round)">
-    <rect width="1280" height="560" fill="url(#bg)"/>
-    <rect width="1280" height="560" fill="url(#cyanAura)"/>
-    <rect width="1280" height="560" fill="url(#violetAura)"/>
-    <rect width="1280" height="560" fill="url(#grid)"/>
-    <circle cx="1030" cy="135" r="170" fill="#46d9e6" opacity=".035" filter="url(#soft)"/>
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="560" fill="url(#background)"/>
+    <rect width="1280" height="560" fill="url(#microGrid)"/>
+    <ellipse cx="1010" cy="278" rx="350" ry="320" fill="url(#cityAura)"/>
+    <ellipse cx="70" cy="570" rx="320" ry="170" fill="#7654ff" opacity="0.08" filter="url(#wideBlur)"/>
 
-    <!-- top rail -->
-    <g font-family="Segoe UI,Arial,sans-serif">
-      <circle cx="58" cy="42" r="4" fill="#40e0a0" filter="url(#glow)"/>
-      <text x="72" y="47" fill="#40e0a0" font-size="12" font-weight="700" letter-spacing="2">SYSTEM ONLINE</text>
-      <text x="1092" y="47" fill="#668694" font-family="monospace" font-size="11">SEED 42  /  LIVE</text>
-      <path d="M44 66H1236" stroke="#79b2cb" stroke-opacity=".18"/>
+    <!-- editorial rails -->
+    <path d="M54 44H1226" stroke="#94bdc9" stroke-opacity="0.18"/>
+    <path d="M54 516H1226" stroke="#94bdc9" stroke-opacity="0.18"/>
+    <path d="M54 44V516M1226 44V516" stroke="#94bdc9" stroke-opacity="0.09"/>
+    <path d="M74 44v8M1206 44v8M74 508v8M1206 508v8" stroke="#46d9e6" stroke-opacity="0.7"/>
+
+    <!-- top metadata -->
+    <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2.2">
+      <circle cx="75" cy="71" r="3.5" fill="#40e0a0" filter="url(#cyanGlow)"/>
+      <text x="88" y="75" fill="#40e0a0">SIMULATION ONLINE</text>
+      <text x="493" y="75" fill="#52717c">SCAMCITY / RESEARCH PROTOTYPE</text>
+      <text x="1090" y="75" fill="#6f909b">SEED_0042</text>
     </g>
 
-    <!-- brand copy -->
-    <g transform="translate(66 102)" font-family="Segoe UI,Arial,sans-serif">
-      <g>
-        <rect width="54" height="54" rx="9" fill="#07151e" stroke="#46d9e6" stroke-width="1.5"/>
-        <path d="M13 14h28v6H13zm0 10h18v6H13zm0 10h28v6H13z" fill="#46d9e6"/>
-        <path d="M35 24h6v6h-6z" fill="#fb3b50"/>
-        <circle cx="41" cy="10" r="3.5" fill="#40e0a0"/>
+    <!-- left editorial lockup -->
+    <g transform="translate(74 116)" font-family="Inter,Segoe UI,Arial,sans-serif">
+      <g transform="translate(0 0)">
+        <rect width="43" height="43" rx="7" fill="#081922" stroke="#46d9e6" stroke-opacity="0.72"/>
+        <path d="M11 11h21v5H11zm0 8h14v5H11zm0 8h21v5H11z" fill="#46d9e6"/>
+        <rect x="28" y="19" width="5" height="5" fill="#fb3b50"/>
+        <circle cx="33" cy="8" r="2.5" fill="#40e0a0"/>
       </g>
-      <text x="0" y="91" fill="#46d9e6" font-size="13" font-weight="700" letter-spacing="4.2">AI SOCIETY SIMULATION LAB</text>
-      <text x="-3" y="166" fill="url(#titleGrad)" font-size="78" font-weight="850" letter-spacing="-4">SCAM<tspan fill="#46d9e6">CITY</tspan></text>
-      <text x="1" y="204" fill="#9bb3be" font-size="19">Before an intervention reaches millions,</text>
-      <text x="1" y="232" fill="#e5f1f5" font-size="19" font-weight="650">test it on a synthetic society first.</text>
+      <text x="59" y="17" fill="#d8ebf0" font-size="12" font-weight="750" letter-spacing="2.6">AI SOCIETY</text>
+      <text x="59" y="35" fill="#46d9e6" font-size="9" font-weight="700" letter-spacing="2.1">SIMULATION LAB</text>
 
-      <!-- process -->
-      <g transform="translate(0 277)">
-        <path d="M14 16H345" stroke="#79b2cb" stroke-opacity=".24" stroke-dasharray="4 6"/>
-        <g font-size="10" font-weight="700" letter-spacing="1.2">
-          <circle cx="14" cy="16" r="13" fill="#46d9e6" fill-opacity=".13" stroke="#46d9e6"/><text x="10.5" y="20" fill="#46d9e6">1</text><text x="0" y="48" fill="#7595a3">SIMULATE</text>
-          <circle cx="124" cy="16" r="13" fill="#fb3b50" fill-opacity=".13" stroke="#fb3b50"/><text x="120.5" y="20" fill="#fb3b50">2</text><text x="105" y="48" fill="#7595a3">ATTACK</text>
-          <circle cx="234" cy="16" r="13" fill="#9a7bff" fill-opacity=".13" stroke="#9a7bff"/><text x="230.5" y="20" fill="#b9a8ff">3</text><text x="207" y="48" fill="#7595a3">INTERVENE</text>
-          <circle cx="345" cy="16" r="13" fill="#40e0a0" fill-opacity=".13" stroke="#40e0a0"/><text x="341.5" y="20" fill="#40e0a0">4</text><text x="321" y="48" fill="#7595a3">COMPARE</text>
+      <text x="-5" y="143" fill="url(#wordmark)" font-size="86" font-weight="850" letter-spacing="-5.5">SCAM</text>
+      <text x="-5" y="219" fill="#46d9e6" font-size="86" font-weight="850" letter-spacing="-5.5">CITY</text>
+      <rect x="307" y="157" width="8" height="8" fill="#fb3b50" transform="rotate(45 311 161)" filter="url(#redGlow)"/>
+
+      <path d="M0 245H390" stroke="url(#cyanLine)"/>
+      <text x="0" y="278" fill="#e8f4f7" font-size="17" font-weight="600">Model the scam.</text>
+      <text x="0" y="304" fill="#a1bac4" font-size="17">Test the intervention.</text>
+      <text x="0" y="330" fill="#718d98" font-size="17">Protect the real world.</text>
+
+      <g transform="translate(0 368)">
+        <rect width="128" height="34" rx="17" fill="#46d9e6" fill-opacity="0.09" stroke="#46d9e6" stroke-opacity="0.46"/>
+        <text x="18" y="21" fill="#65e4eb" font-size="9" font-weight="750" letter-spacing="1.5">100 CITIZENS</text>
+        <rect x="139" width="112" height="34" rx="17" fill="#fb3b50" fill-opacity="0.08" stroke="#fb3b50" stroke-opacity="0.42"/>
+        <text x="159" y="21" fill="#ff7181" font-size="9" font-weight="750" letter-spacing="1.5">5 THREATS</text>
+        <rect x="262" width="133" height="34" rx="17" fill="#40e0a0" fill-opacity="0.08" stroke="#40e0a0" stroke-opacity="0.42"/>
+        <text x="280" y="21" fill="#5ce8ae" font-size="9" font-weight="750" letter-spacing="1.5">4 DEFENSES</text>
+      </g>
+    </g>
+
+    <!-- synthetic city disc -->
+    <g>
+      <circle cx="990" cy="280" r="231" fill="#07131b" fill-opacity="0.58" stroke="#7fb2c0" stroke-opacity="0.17"/>
+      <circle cx="990" cy="280" r="206" fill="url(#dots)" stroke="#46d9e6" stroke-opacity="0.15"/>
+      <circle cx="990" cy="280" r="166" fill="none" stroke="#7397a2" stroke-opacity="0.12" stroke-dasharray="2 7"/>
+      <circle cx="990" cy="280" r="111" fill="none" stroke="#7397a2" stroke-opacity="0.12" stroke-dasharray="2 7"/>
+      <path d="M990 52V508M762 280H1218" stroke="#7397a2" stroke-opacity="0.08"/>
+
+      <g clip-path="url(#cityClip)">
+        <!-- streets / relationships -->
+        <g fill="none" stroke="#3d819c" stroke-opacity="0.28" stroke-width="1.25">
+          <path d="M793 205L851 164 915 188 974 133 1043 177 1118 142 1174 209"/>
+          <path d="M782 277L846 239 915 263 974 219 1043 253 1113 220 1200 270"/>
+          <path d="M778 353L843 326 907 359 975 319 1049 350 1117 316 1194 359"/>
+          <path d="M808 430L865 391 923 430 985 393 1056 430 1120 392 1170 431"/>
+          <path d="M851 164L846 239 843 326 865 391M915 188L915 263 907 359 923 430M974 133L974 219 975 319 985 393M1043 177L1043 253 1049 350 1056 430M1118 142L1113 220 1117 316 1120 392"/>
+          <path d="M793 205L915 263 843 326 923 430M851 164L974 219 907 359 985 393M915 188L1043 253 975 319 1056 430M974 133L1113 220 1049 350 1120 392M1043 177L1174 209 1117 316 1194 359"/>
+        </g>
+
+        <!-- intervention protection wave -->
+        <circle cx="975" cy="319" r="35" fill="#40e0a0" fill-opacity="0.035" stroke="#40e0a0" stroke-opacity="0.75"/>
+        <circle cx="975" cy="319" r="61" fill="none" stroke="#40e0a0" stroke-opacity="0.28"/>
+        <circle cx="975" cy="319" r="88" fill="none" stroke="#40e0a0" stroke-opacity="0.1"/>
+
+        <!-- citizens -->
+        <g fill="#50dbe6" stroke="#06131a" stroke-width="4">
+          <circle cx="793" cy="205" r="7"/><circle cx="851" cy="164" r="7"/><circle cx="915" cy="188" r="6"/><circle cx="974" cy="133" r="8"/>
+          <circle cx="1043" cy="177" r="7"/><circle cx="1118" cy="142" r="6"/><circle cx="1174" cy="209" r="8"/>
+          <circle cx="782" cy="277" r="6"/><circle cx="846" cy="239" r="8"/><circle cx="915" cy="263" r="6"/><circle cx="974" cy="219" r="7"/>
+          <circle cx="1043" cy="253" r="7"/><circle cx="1113" cy="220" r="8"/><circle cx="1200" cy="270" r="6"/>
+          <circle cx="778" cy="353" r="7"/><circle cx="843" cy="326" r="6"/><circle cx="907" cy="359" r="8"/>
+          <circle cx="1049" cy="350" r="7"/><circle cx="1117" cy="316" r="7"/><circle cx="1194" cy="359" r="6"/>
+          <circle cx="808" cy="430" r="7"/><circle cx="865" cy="391" r="8"/><circle cx="923" cy="430" r="6"/><circle cx="985" cy="393" r="7"/>
+          <circle cx="1056" cy="430" r="8"/><circle cx="1120" cy="392" r="6"/><circle cx="1170" cy="431" r="7"/>
+        </g>
+        <g fill="#40e0a0" stroke="#06131a" stroke-width="4" filter="url(#cyanGlow)">
+          <circle cx="975" cy="319" r="10"/><circle cx="1049" cy="350" r="8"/><circle cx="907" cy="359" r="8"/>
+        </g>
+
+        <!-- threat actors -->
+        <g fill="#fb3b50" stroke="#06131a" stroke-width="5" filter="url(#redGlow)">
+          <path d="M1121 265l11 11-11 11-11-11z"/>
+          <path d="M884 283l10 10-10 10-10-10z"/>
+          <path d="M1069 207l9 9-9 9-9-9z"/>
+        </g>
+        <path d="M1119 279Q1060 294 987 315" fill="none" stroke="#fb3b50" stroke-width="2" stroke-opacity="0.7" stroke-dasharray="5 6"/>
+        <path d="M891 296Q928 306 963 316" fill="none" stroke="#fb3b50" stroke-width="2" stroke-opacity="0.5" stroke-dasharray="5 6"/>
+
+        <!-- scanner -->
+        <path d="M785 399Q988 476 1187 397" fill="none" stroke="#46d9e6" stroke-opacity="0.16" stroke-width="18" filter="url(#wideBlur)"/>
+        <path d="M785 399Q988 476 1187 397" fill="none" stroke="#46d9e6" stroke-opacity="0.46" stroke-width="1.4"/>
+      </g>
+
+      <!-- labels orbiting outside the graph -->
+      <g font-family="Inter,Segoe UI,Arial,sans-serif">
+        <g transform="translate(735 119)">
+          <rect width="111" height="28" rx="14" fill="#07151d" stroke="#46d9e6" stroke-opacity="0.32"/>
+          <circle cx="15" cy="14" r="3" fill="#46d9e6"/><text x="27" y="18" fill="#88a7b1" font-size="8" font-weight="700" letter-spacing="1.2">SOCIAL GRAPH</text>
+        </g>
+        <g transform="translate(1090 450)">
+          <rect width="119" height="28" rx="14" fill="#07151d" stroke="#40e0a0" stroke-opacity="0.35"/>
+          <circle cx="15" cy="14" r="3" fill="#40e0a0"/><text x="27" y="18" fill="#86aa9b" font-size="8" font-weight="700" letter-spacing="1.2">GUARDIAN ON</text>
+        </g>
+        <g transform="translate(1125 86)">
+          <text x="0" y="0" fill="#56737e" font-family="monospace" font-size="8">RISK / 0.37</text>
+          <text x="0" y="14" fill="#56737e" font-family="monospace" font-size="8">TICK / 018</text>
         </g>
       </g>
-
-      <g transform="translate(0 358)" font-size="10" font-weight="700" letter-spacing="1.1">
-        <rect width="146" height="34" rx="17" fill="#40e0a0" fill-opacity=".08" stroke="#40e0a0" stroke-opacity=".55"/>
-        <circle cx="18" cy="17" r="4" fill="#40e0a0"/><text x="31" y="21" fill="#40e0a0">REPLAYABLE</text>
-        <rect x="158" width="160" height="34" rx="17" fill="#9a7bff" fill-opacity=".08" stroke="#9a7bff" stroke-opacity=".5"/>
-        <text x="177" y="21" fill="#b9a8ff">WEB + MINECRAFT</text>
-      </g>
     </g>
 
-    <!-- dashboard mock -->
-    <g transform="translate(590 92)" font-family="Segoe UI,Arial,sans-serif">
-      <rect width="620" height="410" rx="17" fill="#050d13" stroke="#79b2cb" stroke-opacity=".28"/>
-      <rect x="15" y="15" width="590" height="41" rx="9" fill="#0a1821" stroke="#79b2cb" stroke-opacity=".13"/>
-      <text x="31" y="40" fill="#dcecf1" font-size="12" font-weight="700" letter-spacing="1.2">CITY COMMAND CENTER</text>
-      <circle cx="510" cy="35" r="4" fill="#40e0a0" filter="url(#glow)"/>
-      <text x="521" y="39" fill="#40e0a0" font-size="9" font-weight="700" letter-spacing="1">LIVE API</text>
-      <text x="574" y="39" fill="#557581" font-family="monospace" font-size="8">T+18</text>
-
-      <!-- map panel -->
-      <rect x="15" y="70" width="382" height="258" rx="10" fill="url(#panel)" stroke="#79b2cb" stroke-opacity=".18"/>
-      <text x="31" y="94" fill="#668694" font-family="monospace" font-size="9" letter-spacing="1">SOCIAL RISK MAP</text>
-      <text x="331" y="94" fill="#46d9e6" font-family="monospace" font-size="8">100 NODES</text>
-      <g transform="translate(27 105)" stroke="#4c91ff" stroke-opacity=".24" stroke-width="1.2">
-        <path d="M31 53L92 26l58 48 72-38 93 43M31 53l48 82 71-61 50 91 115-86M79 135l-37 73 108 5 50-48 107 65M150 213l-58-78m215 95l8-151M222 36l-22 129M92 26l0 109"/>
-      </g>
-      <g transform="translate(27 105)" fill="#46d9e6" stroke="#07131c" stroke-width="4">
-        <circle cx="31" cy="53" r="7"/><circle cx="92" cy="26" r="9"/><circle cx="150" cy="74" r="7"/><circle cx="222" cy="36" r="8"/><circle cx="315" cy="79" r="7"/>
-        <circle cx="79" cy="135" r="8"/><circle cx="200" cy="165" r="11" fill="#40e0a0"/><circle cx="42" cy="208" r="7"/><circle cx="150" cy="213" r="8"/><circle cx="307" cy="230" r="8"/>
-      </g>
-      <circle cx="227" cy="270" r="19" fill="none" stroke="#40e0a0" stroke-opacity=".4" filter="url(#glow)"/>
-      <g transform="translate(27 105)" fill="#fb3b50" stroke="#07131c" stroke-width="4">
-        <path d="M278 103l9 15-9 15-9-15z"/><path d="M116 157l8 14-8 14-8-14z"/>
-      </g>
-      <path d="M305 223Q280 242 238 264" fill="none" stroke="#fb3b50" stroke-width="2" stroke-dasharray="5 5"/>
-      <g font-family="monospace" font-size="8">
-        <circle cx="32" cy="311" r="3" fill="#46d9e6"/><text x="41" y="314" fill="#668694">CITIZEN</text>
-        <circle cx="98" cy="311" r="3" fill="#fb3b50"/><text x="107" y="314" fill="#668694">SCAMMER</text>
-        <circle cx="173" cy="311" r="3" fill="#40e0a0"/><text x="182" y="314" fill="#668694">PROTECTED</text>
-      </g>
-
-      <!-- metrics -->
-      <rect x="410" y="70" width="195" height="122" rx="10" fill="url(#panel)" stroke="#79b2cb" stroke-opacity=".18"/>
-      <text x="426" y="94" fill="#668694" font-family="monospace" font-size="9" letter-spacing="1">LIVE METRICS</text>
-      <text x="426" y="130" fill="#e5f1f5" font-size="25" font-weight="750">03</text><text x="465" y="128" fill="#668694" font-size="9">VICTIMS</text>
-      <text x="426" y="162" fill="#fb3b50" font-size="19" font-weight="750">$8,420</text><text x="509" y="160" fill="#668694" font-size="9">LOSS</text>
-      <path d="M426 177h158" stroke="#79b2cb" stroke-opacity=".12"/>
-
-      <!-- intervention -->
-      <rect x="410" y="205" width="195" height="123" rx="10" fill="url(#panel)" stroke="#9a7bff" stroke-opacity=".28"/>
-      <text x="426" y="230" fill="#9a7bff" font-family="monospace" font-size="9" letter-spacing="1">INTERVENTION</text>
-      <text x="426" y="257" fill="#e5f1f5" font-size="13" font-weight="700">SOCIAL GUARDIAN</text>
-      <text x="426" y="277" fill="#668694" font-size="9">Trusted contact activated</text>
-      <rect x="426" y="293" width="158" height="20" rx="4" fill="#40e0a0"/>
-      <text x="461" y="307" fill="#041117" font-size="8" font-weight="800" letter-spacing="1">PROTECTION ACTIVE</text>
-
-      <!-- timeline -->
-      <rect x="15" y="342" width="590" height="53" rx="9" fill="#0a1821" stroke="#79b2cb" stroke-opacity=".13"/>
-      <text x="31" y="363" fill="#668694" font-family="monospace" font-size="8">EVENT STREAM</text>
-      <path d="M31 378H578" stroke="#79b2cb" stroke-opacity=".16"/>
-      <circle cx="85" cy="378" r="4" fill="#46d9e6"/><circle cx="204" cy="378" r="4" fill="#fb3b50"/><circle cx="342" cy="378" r="4" fill="#facc15"/><circle cx="491" cy="378" r="5" fill="#40e0a0" filter="url(#glow)"/>
-      <text x="31" y="389" fill="#4c6975" font-family="monospace" font-size="7">CONTACT</text><text x="180" y="389" fill="#4c6975" font-family="monospace" font-size="7">TRUST</text><text x="321" y="389" fill="#4c6975" font-family="monospace" font-size="7">RISK</text><text x="465" y="389" fill="#40e0a0" font-family="monospace" font-size="7">BLOCKED</text>
+    <!-- bottom legend -->
+    <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.6">
+      <text x="74" y="541" fill="#506e79">SYNTHETIC BY DESIGN</text>
+      <circle cx="755" cy="538" r="3" fill="#46d9e6"/><text x="766" y="541" fill="#567681">CITIZEN</text>
+      <rect x="838" y="534" width="7" height="7" fill="#fb3b50" transform="rotate(45 841.5 537.5)"/><text x="854" y="541" fill="#567681">THREAT</text>
+      <circle cx="931" cy="538" r="3" fill="#40e0a0"/><text x="942" y="541" fill="#567681">PROTECTED</text>
+      <text x="1090" y="541" fill="#506e79">WEB × MINECRAFT</text>
     </g>
-
-    <path d="M0 532H1280" stroke="#46d9e6" stroke-opacity=".18"/>
-    <text x="66" y="547" fill="#47636f" font-family="monospace" font-size="9" letter-spacing="1.5">100% SYNTHETIC DATA  •  DETERMINISTIC CORE  •  EXPLAINABLE OUTCOMES</text>
   </g>
-  <rect x="1" y="1" width="1278" height="558" rx="25" fill="none" stroke="#79b2cb" stroke-opacity=".3"/>
+
+  <rect x="1" y="1" width="1278" height="558" rx="27" fill="none" stroke="#9bc1cc" stroke-opacity="0.28"/>
 </svg>

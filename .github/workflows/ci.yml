@@ -1,0 +1,83 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify simulation contracts
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      # These four run fully offline: no server, no gateway, no API key.
+      # Each one prints its own scope note so a green run is not read as a
+      # claim about real-world causal validity.
+      - name: Offline contract checks
+        run: |
+          node scripts/verify-counterfactual.mjs
+          node scripts/verify-intervention-agent.mjs
+          node scripts/verify-live-thought-consistency.mjs
+          node scripts/agent-sync-smoke.mjs
+
+      - name: Build
+        run: npm run build
+
+      # The only check that needs a live process. Port 3000 is free on a clean
+      # runner, so the discovery-file fallback in scripts/lib/endpoint.mjs
+      # resolves to the default endpoint.
+      - name: Live simulation contract
+        run: |
+          npm run start > server.log 2>&1 &
+          server_pid=$!
+          ready=""
+          for i in $(seq 1 60); do
+            if curl -sf -o /dev/null http://localhost:3000/api/health; then
+              echo "server ready after ${i}s"
+              ready=1
+              break
+            fi
+            sleep 1
+          done
+          if [ -z "$ready" ]; then
+            echo "::error::server did not become ready within 60s"
+            cat server.log
+            kill "$server_pid" 2>/dev/null || true
+            exit 1
+          fi
+          status=0
+          node scripts/verify-simulation-contract.mjs || status=$?
+          kill "$server_pid" 2>/dev/null || true
+          exit "$status"
+
+      - name: Upload server log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scamcity-server-log
+          path: server.log
+          if-no-files-found: ignore

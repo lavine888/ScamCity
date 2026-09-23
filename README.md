@@ -12,6 +12,7 @@
 
 <br />
 
+[![CI](https://img.shields.io/github/actions/workflow/status/lavine888/ScamCity/ci.yml?style=for-the-badge&label=CI)](https://github.com/lavine888/ScamCity/actions/workflows/ci.yml)
 [![Next.js](https://img.shields.io/badge/Next.js-14-050c12?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Minecraft](https://img.shields.io/badge/Minecraft-Fabric-62B47A?style=for-the-badge&logo=curseforge&logoColor=white)](minecraft-bridge/README.md)

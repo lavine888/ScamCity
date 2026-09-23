@@ -453,6 +453,18 @@ ScamCity/
 | [`bridge-harness/README.md`](bridge-harness/README.md) | 验证快照投影和增量渲染时 |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | 想贡献场景、规则或文档时 |
 
+## 🌱 相关项目
+
+ScamCity 是「证据优先」小生态里的沙盒层：先模拟、再解释、最后谨慎干预。
+
+| 项目 | 说明 |
+| --- | --- |
+| [Lavine-Skill-Runtime](https://github.com/lavine888/Lavine-Skill-Runtime) | Execution layer that runs reviewed skills end to end |
+| [Accounting-Red-Flag-Detector](https://github.com/lavine888/Accounting-Red-Flag-Detector) | Point-in-time forensic screen for A-share accounting red flags |
+| [career-alpha](https://github.com/lavine888/career-alpha) | Evidence-grounded career decision system |
+| [flux-evidence-lab](https://github.com/lavine888/flux-evidence-lab) | Verifiable decision trail for reviewable AI runs |
+| [skill-buffett-moat-screener](https://github.com/lavine888/skill-buffett-moat-screener) | Point-in-time Buffett moat screener, packaged as a skill |
+
 ---
 
 <div align="center">

@@ -1,0 +1,60 @@
+name: 缺陷报告
+description: 报告一个可复现的缺陷（模拟、API、Web 或 Minecraft bridge）
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请尽量给出**相同 seed 下的复现步骤**。没有 seed 与命令的缺陷很难定位。
+  - type: input
+    id: seed
+    attributes:
+      label: Seed / 世界标识
+      description: 出问题时的 seed、snapshot 或 cursor
+    validations:
+      required: false
+  - type: dropdown
+    id: surface
+    attributes:
+      label: 受影响的表面
+      options:
+        - Web 控制塔
+        - Simulation API
+        - 模拟引擎 / 规则
+        - Minecraft bridge
+        - 工具脚本（doctor / report / verify）
+        - 文档
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从干净安装开始的完整命令序列
+      placeholder: |
+        npm ci
+        npm run start
+        ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      description: 报错信息、日志或截图；如已运行 verify 脚本请附上输出
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 运行环境
+      description: 操作系统、Node 版本、浏览器或 Minecraft/Fabric 版本
+    validations:
+      required: false

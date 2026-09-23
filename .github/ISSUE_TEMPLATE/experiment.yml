@@ -1,0 +1,48 @@
+name: 实验或场景建议
+description: 提议一个新的合成诈骗场景、干预规则或实验设计
+title: "[Experiment] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        好的场景建议应该是**可复现、可证伪**的：给定 seed 与干预，能明确回答“发生了什么 / 哪种干预有效 / 代价是多少”。
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 场景描述
+      description: 哪一类骗局？受害路径是什么？涉及哪些合成角色？
+    validations:
+      required: true
+  - type: textarea
+    id: reproducible
+    attributes:
+      label: 如何复现
+      description: seed、初始参数、需要触发的城市事件
+    validations:
+      required: true
+  - type: textarea
+    id: intervention
+    attributes:
+      label: 建议的干预与对照
+      description: 想比较哪些策略？对照组是什么？
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: 用哪些指标判定
+      description: 损失、受害人数、误报成本、干预成本，或你新增的指标
+    validations:
+      required: true
+  - type: checkboxes
+    id: invariants
+    attributes:
+      label: 不变量确认
+      options:
+        - label: 场景完全使用合成数据，不包含真实个人
+          required: true
+        - label: 结论由确定性规则判定，LLM 不参与事实生成
+          required: true
+        - label: 相同 seed 下结果可复现
+          required: true

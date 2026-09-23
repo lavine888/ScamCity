@@ -451,6 +451,7 @@ ScamCity/
 | [`evolution/PRODUCT_AUDIT.md`](evolution/PRODUCT_AUDIT.md) | 了解产品从哪里演进而来时 |
 | [`minecraft-bridge/README.md`](minecraft-bridge/README.md) | 构建、安装或操作 Fabric Bridge 时 |
 | [`bridge-harness/README.md`](bridge-harness/README.md) | 验证快照投影和增量渲染时 |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | 想贡献场景、规则或文档时 |
 
 ---
 

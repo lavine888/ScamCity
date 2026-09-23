@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 研究边界与安全说明
+    url: https://github.com/lavine888/ScamCity/blob/main/README.md#-安全与研究边界
+    about: 合成数据、LLM 边界与使用限制
+  - name: 贡献指南
+    url: https://github.com/lavine888/ScamCity/blob/main/CONTRIBUTING.md
+    about: 项目不变量、本地校验命令与 PR 检查清单
